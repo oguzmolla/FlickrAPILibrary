@@ -14,6 +14,8 @@ Example delete upload listing operations using api
         }
 ~~~
 
+# Examples PhotoList
+~~~
         [HttpGet("GetPhotoList")]
         public IActionResult GetPhotoList(int page, int size)
         {
@@ -21,7 +23,10 @@ Example delete upload listing operations using api
             var response = flickr.GetPhotoList(page, size);
             return Ok(response);
         }
+~~~
 
+# Examples Photo Upload
+~~~
         [HttpPut("UpdatePhoto")]
         public IActionResult UpdatePhoto([FromForm] List<IFormFile> formFiles)
         {
@@ -35,6 +40,10 @@ Example delete upload listing operations using api
             }
         }
 
+~~~
+
+# Examples Photo Delete
+~~~
         [HttpGet("DeletePhoto")]
         public IActionResult DeletePhoto(string photoId)
         {
@@ -48,3 +57,4 @@ Example delete upload listing operations using api
             var response = flickr.DeletePhoto(parameters, photoId);
             return Ok(response);
         }
+ ~~~
