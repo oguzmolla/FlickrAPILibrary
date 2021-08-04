@@ -3,7 +3,7 @@ By using flickr api, you can do your photo throwing, deletion and listing operat
 
 Example delete upload listing operations using api
 
-# Examples PhotoInfo
+# Example PhotoInfo
 ~~~
         [HttpGet("GetPhotoInfo")]
         public IActionResult GetPhotoInfo(string photoId)
@@ -14,7 +14,7 @@ Example delete upload listing operations using api
         }
 ~~~
 
-# Examples PhotoList
+# Example PhotoList
 ~~~
         [HttpGet("GetPhotoList")]
         public IActionResult GetPhotoList(int page, int size)
@@ -25,7 +25,7 @@ Example delete upload listing operations using api
         }
 ~~~
 
-# Examples Photo Upload
+# Example Photo Upload
 ~~~
         [HttpPut("UpdatePhoto")]
         public IActionResult UpdatePhoto([FromForm] List<IFormFile> formFiles)
@@ -42,7 +42,7 @@ Example delete upload listing operations using api
 
 ~~~
 
-# Examples Photo Delete
+# Example Photo Delete
 ~~~
         [HttpGet("DeletePhoto")]
         public IActionResult DeletePhoto(string photoId)
